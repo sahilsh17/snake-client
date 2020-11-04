@@ -14,6 +14,8 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write("Name: sah");
+    //conn.write("Move: up");
+    
   });
   return conn;
 }
