@@ -12,9 +12,9 @@ const connect = function() {
     console.log(data);
   });
 
-  conn.on('data', (port) => {
-    console.log('Message from client: ', port)
+  conn.on('connect', () => {
+    conn.write("Name: sah");
   });
-  return connect;
+  return conn;
 }
 module.exports = {connect};
